@@ -1,14 +1,17 @@
-﻿from tkinter import * 
+from tkinter import * 
 from turtle import width
 from PIL import ImageGrab
 import io
 from tkinter import font
+from tkinter import * 
+from turtle import window_width
+from random import * 
 raam = Tk()
-raam.title("poland")
+raam.title("monako")
 tahvel = Canvas(raam, width=600, height=600, background="grey")
 tahvel.grid()
 
-#poland
+#monako
 tahvel.create_rectangle(30,200, 300,300,fill="red")
 tahvel.create_rectangle(30,300, 300,400,fill="white")
 
@@ -59,13 +62,50 @@ y1=tahvel.winfo_height()
 
 ImageGrab.grab().crop((0,0,x1,y1)).save("image.jpg")
 
+#разноцветный круг
+colors = ["black",
+          "white",
+          "blue",
+          "red",
+          "pink",
+          "green", 
+          "yellow",
+          "gold",
+          "lightblue"]
 
+raam2 = Tk()
+raam2.title("разноцветный круг")
+tahvel2 = Canvas(raam2, width=1200, height=1200, background="white")
+x0=0
+y0=0
+x1=600
+y1=600
+p=5
+for i in range(55):
+    x0+=p 
+    y0+=p 
+    x1-=p 
+    y1-=p 
+    tahvel2.create_oval(x0,y0,x1,y1, fill=choice(colors))
+
+    #doska
 raam = Tk()
-raam.title("valgusfoor")
-tahvel = Canvas(raam, width=350, height=500, background="white")
+raam.title("Tahvel")
+tahvel = Canvas(raam, width=600, height=600, background="white")
+
+square_size = 50
+
+for row in range(8):
+    for col in range(8):
+        x1 = col * square_size
+        y1 = row * square_size
+        x2 = x1 + square_size
+        y2 = y1 + square_size
+        if (row+col) % 2 == 0:
+            color = "black"
+        else:
+            color = "white"
+        tahvel.create_rectangle(x1, y1, x2, y2, fill=color)
+
 tahvel.grid()
-
-
-
-
 raam.mainloop()
