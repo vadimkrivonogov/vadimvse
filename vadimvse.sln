@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "vadimvse", "vadimvse\vadimvse.pyproj", "{26B447BA-1E3D-4B5C-90AA-FB7784A893D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26B447BA-1E3D-4B5C-90AA-FB7784A893D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B447BA-1E3D-4B5C-90AA-FB7784A893D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCC35197-73EA-4453-90C6-51A410F6FAA8}
+	EndGlobalSection
+EndGlobal
